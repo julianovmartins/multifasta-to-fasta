@@ -10,7 +10,7 @@ What this script does
 - 2 - Search for FASTA files in all directories of the tree, recursively.
 - 4 - Count existing headers.
 - 5 - If the headers are greater than one...
-- 6 - Set the file name by [accession number](https://www.ncbi.nlm.nih.gov/books/NBK21091/table/ch18.T.refseq_accession_numbers_and_mole/?report=objectonly){:target="_blank"}.
+- 6 - Set the file name by <a  href="https://www.ncbi.nlm.nih.gov/books/NBK21091/table/ch18.T.refseq_accession_numbers_and_mole/?report=objectonly" target="_blank">accession number</a>.
 - 7 - Set the directory.
 - 8 - Set the new directory.
 - 9 - If directory not exists...
