@@ -9,7 +9,7 @@ do
         if [ ! -d "$new_directory" ]; then
             mkdir $new_directory;
         fi
-        awk -v dir="$new_directory" -F'[|,]' '/^>/ {if ($0 ~ /\|/)  s=$4".fasta"; else s=substr($0,2)".fasta";} {print > dir"/"s}' $fasta_file;
+        awk -v dir="$new_directory" -F'[|, ]' '/^>/ {if ($0 ~ /([NC|AC|NG|NT|NW|NS|NZ|NM|NR|XM|XR|AP|NP|YP|XP|ZP]_*)/)  s=$1".fasta"; else s=$0".fasta";} {print > dir"/"s}' $fasta_file;
         mv $fasta_file $fasta_file".splitted";
         echo "File splitted: $fasta_file";
     fi
